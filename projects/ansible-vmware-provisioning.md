@@ -33,12 +33,6 @@ Automated the provisioning of virtual machines using **Ansible**, **govc** (vSph
 
 ---
 
-## 📷 Screenshots (Optional)
-
-> *(Tambahkan screenshot command output, playbook structure, Infoblox UI, dsb kalau ada)*
-
----
-
 ## 🤔 Challenges & Solutions
 
 | Challenge | Solution |
