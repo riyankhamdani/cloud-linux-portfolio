@@ -1,0 +1,53 @@
+# 🔐 IAM Policy Hardening and Access Audit on AWS
+
+## 📌 Summary
+
+Conducted a comprehensive IAM access audit and policy hardening project on AWS. The goal was to identify overly permissive IAM roles, apply the principle of least privilege, and enforce MFA across key user accounts. This initiative improved the cloud environment’s security posture and reduced the attack surface.
+
+---
+
+## 🔧 Tools & Technologies
+
+- **AWS IAM** (Users, Roles, Policies)
+- **AWS CLI** & **Access Analyzer**
+- **AWS Config Rules**
+- **JSON/YAML policy files**
+- **Security Best Practices Framework** (CIS AWS Foundations Benchmark)
+
+---
+
+## 🚀 Key Tasks Performed
+
+- Audited existing IAM roles and policies for excessive privileges
+- Created a report of over-permissive policies and suggested remediations
+- Applied least privilege principle to roles and service accounts
+- Enforced **Multi-Factor Authentication (MFA)** across users
+- Created and deployed IAM policies in JSON with tighter scopes
+- Used **AWS Access Analyzer** to validate effective permissions
+
+---
+
+## 🤔 Challenges & Solutions
+
+| Challenge                                 | Solution                                                           |
+|-------------------------------------------|--------------------------------------------------------------------|
+| Many legacy IAM roles with wildcard permissions | Refactored into specific actions with policy versioning            |
+| Lack of visibility into effective access   | Used **Access Analyzer** to simulate real-world access scenarios  |
+| Users resisting MFA adoption              | Provided automated reminders and user documentation for enablement |
+
+---
+
+## 📈 Impact
+
+- 🧱 **Reduced** number of wildcard ("*") IAM policies by **85%**
+- 🔐 **Enforced MFA** for **100%** of IAM users
+- 🧾 **Improved audit readiness** for internal and external compliance
+- ✅ **Reduced risk of privilege escalation and data exposure**
+
+---
+
+## 🔍 Next Steps
+
+- Automate IAM audits using **AWS Config Rules** + **Lambda**
+- Integrate IAM changes into **CI/CD pipeline** with **Terraform** or **CloudFormation**
+- Expand access reviews to **federated roles** and third-party accounts
